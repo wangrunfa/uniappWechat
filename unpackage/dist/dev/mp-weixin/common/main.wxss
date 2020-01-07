@@ -1,0 +1,48 @@
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1598223 */
+  src: url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.eot');
+  src: url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.svg#iconfont') format('svg');
+}
+.ttf-icon {
+	    font-family: iconfont;
+}
+	
+	/*每个页面公共css */
+.toptab{
+		 width: 750rpx;
+		 position: fixed;
+		 top: 0;
+		 background: #1E1E1E;
+		 z-index: 1200;
+}
+page{
+		 background: rgb(50,50,50);
+}
+.font-color-255{
+		 	 color: rgb(255,255,255);
+}
+.font-color-220{
+	 		 color: rgb(220,220,220);
+}
+.font-color-200{
+	 		  color: rgb(220,220,220);
+}
+.background-color-60{
+		 background: rgb(60,60,60);
+}
+.background-color-40{
+	 		 background: rgb(40,40,40);
+}
+.background-color-30{
+	 		 background: rgb(30,30,30);
+}
+.background-color-1e1e1e{
+	 		 background: #1E1E1E;
+}
+	 
+

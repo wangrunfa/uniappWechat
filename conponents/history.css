@@ -1,0 +1,374 @@
+
+	/* 查询结果 */
+	.findListbox {
+		width: 750rpx;
+		height: 100%;
+
+	}
+
+	.history_content {
+		clear: both;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.history_content .left,
+	.history_content .right {
+		width: 365rpx;
+	}
+
+	.history_content .left {
+		float: left;
+		margin-left: 6rpx;
+	}
+
+	.history_content .right {
+		float: right;
+		margin-right: 6rpx;
+	}
+
+	.history_item {
+		display: inline-block;
+		margin-bottom: 6px;
+		padding-bottom: 2px;
+		border-radius: 10px;
+		border: 1rpx solid rgba(207, 200, 200, 0.159);
+		width: 100%;
+	}
+
+	.item-img {
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+		z-index: 100;
+		position: relative;
+
+	}
+
+	.item-title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding: 4px 10px;
+		font-size: 14px;
+		border-left: 3px solid #f6f86b;
+		font-family: 'PingFang SC-Medium';
+
+	}
+
+	.item-ava {
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.name-title {
+		font-size: 12px;
+		font-family: 'PingFang SC-Medium';
+
+		display: block;
+	}
+
+	.image-quantity {
+		z-index:300;
+		width: auto;
+		padding: 0 10px;
+		height: 22px;
+		
+		position: absolute;
+		border-radius: 11px;
+		margin: 10rpx;
+	
+		text-align: center;
+		line-height: 22px;
+		font-size: 13px;
+	}
+	
+.show-title {
+		height: 30px;
+		width: 750rpx;
+		text-indent: 10px;
+		line-height: 30px;
+		font-size: 16px;
+		margin-top: 100rpx;
+	}
+
+	.history_auth_name_buttom {
+		height: 100rpx;
+		width: 100%;
+		float: left;
+	}
+
+	.hanb_left {
+		width: 260rpx;
+		height: 100rpx;
+		float: left;
+	}
+
+	.search {
+		width: 80px;
+		height: 20px
+	}
+
+	.hanb_right {
+		width: 80rpx;
+		height: 80rpx;
+		float: left;
+		border-radius: 6px;
+		
+	}
+
+
+	.hanb_left_biaoqian {
+		width: 240rpx;
+		height: 50rpx;
+		padding: 0 0 0 20rpx;
+		float: left;
+		overflow: hidden;
+	}
+
+	.hanb_left_time {
+		border-left: 3px solid #4de76e;
+		width: 240rpx;
+		height: 40rpx;
+		padding: 0 0 0 20rpx;
+		font-size: 25rpx;
+		float: left;
+		line-height: 40rpx
+	}
+
+.download-icon{
+text-align: center;line-height: 80rpx;font-size: 60rpx;
+}
+	.labels {
+		padding: 0px 5px;
+		display: inline-block;
+		height: 50rpx;
+		font-size: 30rpx;
+		float: left;
+		
+        z-index: 300;
+		margin: 0 3px 0 0;
+		line-height: 50rpx;
+		border-radius: 3px;
+
+	}
+
+
+	.maxBox {
+		/* width: 100%; */
+		display: flex;
+		/*弹性盒模型*/
+		justify-content: center;
+		/*主轴方向居中显示*/
+		align-items: center;
+		/*交叉轴方向居中显示*/
+		height: 80rpx;
+		width: 80rpx;
+	}
+
+	.donhuohe {
+		height: 70rpx;
+		margin-top: 70rpx;
+	}
+
+	.donhuohe view {
+		float: left;
+		width: 6rpx;
+		height: 6rpx;
+		border-radius: 6rpx;
+		margin-right: 3rpx;
+	}
+
+	.donhuohe view:nth-child(1) {
+		background-color: #f62e74;
+		animation: love1 4s infinite;
+	}
+
+	.donhuohe view:nth-child(2) {
+		background-color: #f45330;
+		animation: love2 4s infinite;
+		animation-delay: 0.15s;
+	}
+
+	.donhuohe view:nth-child(3) {
+		background-color: #ffc883;
+		animation: love3 4s infinite;
+		animation-delay: 0.3s;
+	}
+
+	.donhuohe view:nth-child(4) {
+		background-color: #30d268;
+		animation: love4 4s infinite;
+		animation-delay: 0.45s;
+	}
+
+	.donhuohe view:nth-child(5) {
+		background-color: #006cb4;
+		animation: love5 4s infinite;
+		animation-delay: 0.6s;
+	}
+
+	.donhuohe view:nth-child(6) {
+		background-color: #784697;
+		animation: love4 4s infinite;
+		animation-delay: 0.75s;
+	}
+
+	.donhuohe view:nth-child(7) {
+		background-color: #ffc883;
+		animation: love3 4s infinite;
+		animation-delay: 0.9s;
+	}
+
+	.donhuohe view:nth-child(8) {
+		background-color: #f45330;
+		animation: love2 4s infinite;
+		animation-delay: 1.05s;
+	}
+
+	.donhuohe view:nth-child(9) {
+		background-color: #f62e74;
+		animation: love1 4s infinite;
+		animation-delay: 1.2s;
+	}
+
+	@keyframes love1 {
+
+		30%,
+		50% {
+			height: 30rpx;
+			transform: translateY(-20rpx);
+		}
+
+		75%,
+		100% {
+			height: 7rpx;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes love2 {
+
+		30%,
+		50% {
+			height: 45rpx;
+			transform: translateY(-30rpx);
+		}
+
+		75%,
+		100% {
+			height: 7rpx;
+			transform: translateY(0);
+		}
+
+	}
+
+	@keyframes love3 {
+
+		30%,
+		50% {
+			height: 60rpx;
+			transform: translateY(-37rpx);
+		}
+
+		75%,
+		100% {
+			height: 7rpx;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes love4 {
+
+		30%,
+		50% {
+			height: 60rpx;
+			transform: translateY(-30rpx);
+		}
+
+		75%,
+		100% {
+			height: 7rpx;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes love5 {
+
+		30%,
+		50% {
+			height: 55rpx;
+			transform: translateY(-20rpx);
+		}
+
+		75%,
+		100% {
+			height: 7rpx;
+			transform: translateY(0);
+		}
+	}
+
+
+
+	
+	
+	@-webkit-keyframes line-scale-pulse-out-rapid {
+		0% {
+			-webkit-transform: scaley(1);
+			transform: scaley(1);
+		}
+
+		80% {
+			-webkit-transform: scaley(0.3);
+			transform: scaley(0.3);
+		}
+
+		90% {
+			-webkit-transform: scaley(1);
+			transform: scaley(1);
+		}
+	}
+
+	@keyframes line-scale-pulse-out-rapid {
+		0% {
+			-webkit-transform: scaley(1);
+			transform: scaley(1);
+		}
+
+		80% {
+			-webkit-transform: scaley(0.3);
+			transform: scaley(0.3);
+		}
+
+		90% {
+			-webkit-transform: scaley(1);
+			transform: scaley(1);
+		}
+	}
+
+	.line-scale-pulse-out-rapid>view {
+	
+		width: 10rpx;
+		height: 90rpx;
+		border-radius: 4rpx;
+		margin: 6rpx;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		display: inline-block;
+		-webkit-animation: line-scale-pulse-out-rapid 0.9s 0s infinite cubic-bezier(.11, .49, .38, .78);
+		animation: line-scale-pulse-out-rapid 0.9s 0s infinite cubic-bezier(.11, .49, .38, .78);
+	}
+
+	.line-scale-pulse-out-rapid>view:nth-child(2),
+	.line-scale-pulse-out-rapid>view:nth-child(4) {
+		-webkit-animation-delay: 0.25s !important;
+		animation-delay: 0.25s !important;
+	}
+
+	.line-scale-pulse-out-rapid>view:nth-child(1),
+	.line-scale-pulse-out-rapid>view:nth-child(5) {
+		-webkit-animation-delay: 0.5s !important;
+		animation-delay: 0.5s !important;
+	}

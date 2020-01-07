@@ -1,0 +1,22 @@
+.search-bottom-box{
+	height: 80px;
+	width: 80px;
+	z-index: 1001;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+}
+.search-return-bottom{
+	width: 70px;
+	height: 70px;
+	margin: 0 10px 10px 0 ;
+	border-radius: 50%;
+	background: rgb(150,150,150);
+	line-height: 70px;
+	text-align: center;
+	color: white;
+	/* box-shadow: 1px 1px 2px #ffffff; */
+	
+	font-size: 50px;
+	 background-image: linear-gradient(to bottom right, red, yellow);
+}

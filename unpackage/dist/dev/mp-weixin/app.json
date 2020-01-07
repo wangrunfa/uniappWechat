@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/phizpackage/phizpackage",
+    "pages/search/search",
+    "pages/particulars/particulars"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "transparentTitle": "auto",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000000"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#FFC125",
+    "backgroundColor": "#1E1E1E",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/indexBlack.png",
+        "selectedIconPath": "static/icon/index.png"
+      },
+      {
+        "pagePath": "pages/particulars/particulars",
+        "iconPath": "static/icon/showBlack.png",
+        "selectedIconPath": "static/icon/show.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

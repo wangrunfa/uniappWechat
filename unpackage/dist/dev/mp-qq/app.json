@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "transparentTitle": "auto",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {}
+}

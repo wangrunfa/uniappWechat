@@ -1,0 +1,89 @@
+
+@font-face {
+	        font-family: 'iconfont';
+	        src: url('https://at.alicdn.com/t/font_865816_17gjspmmrkti.ttf') format('truetype');
+}
+.test {
+	        font-family: iconfont;
+	        margin-left: 20rpx;
+}
+.slideshow-box{
+		width: 750rpx;
+		height: 350rpx;
+}
+.nav-maxBox{
+  height: 410rpx;
+  width: 710rpx;
+  margin: 0 auto;
+}
+.nav-maxBox-left{
+width: 355rpx;
+height: 400rpx;
+float: left;
+}
+.shadow-blur {
+	position: relative;
+}
+.nav-maxBox-right{
+width: 355rpx;
+height: 400rpx;
+float: left;
+}
+.nav-maxBox-left-button{
+  width: 345rpx;
+  height: 370rpx;
+  margin: 20rpx 0;
+  border-radius: 7px;
+ background:#333333;
+ overflow: hidden;
+}
+.nav-maxBox-left-button-image{
+	width: 345rpx;
+	height: 370rpx;
+}
+.nav-maxBox-right-button-01{
+ width: 345rpx;
+  height: 175rpx;
+  margin: 20rpx 0 0 10rpx;
+  border-radius: 7px;
+ background:rgba(255, 255, 255);
+ overflow: hidden
+}
+.nav-maxBox-right-button-01>image{
+   width: 345rpx;
+  height: 175rpx;
+}
+.image-group-box {
+  width: 730rpx;
+  margin: 10rpx auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  white-space: nowrap;
+}
+.titles{
+  height: 30px;
+  text-indent: 30rpx;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  border-left: 3px solid blue;
+  line-height: 30px;
+  background: #1E1E1E;
+}
+.email-titles{
+  height: 50px;
+  width: 710rpx;
+  margin: 20rpx;
+  color: rgb(238, 186, 42);
+  text-indent: 30rpx;
+  font-size: 17px;
+  line-height: 50px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 7px;
+  font-weight: bold;
+  size: 15px;
+}
+
+

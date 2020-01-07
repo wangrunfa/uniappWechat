@@ -1,0 +1,76 @@
+.bottom-box {
+		width: 750rpx;
+		height: 100rpx;
+		position: fixed;
+		bottom: 0px;
+		background: rgb(60,60,60);
+		z-index: 1000;
+	}
+
+	.bottom-box2 {
+		width: 750rpx;
+		height: 60rpx;
+		margin-top: 20rpx;
+	}
+
+	.bottom-button-box {
+		width: 250rpx;
+		height: 60rpx;
+		float: left;
+	}
+
+	.image-group-box {
+		width: 100%;
+		height: 50rpx;
+		overflow: hidden;
+	}
+
+	.max-image-group-box {
+		width: 500rpx;
+		height: 50rpx;
+		overflow: hidden;
+		margin: 20rpx 125rpx;
+	}
+
+	.labels {
+		padding: 0px 5px;
+		display: inline-block;
+		height: 50rpx;
+		float: left;
+		background: #000000;
+		display: inline-block;
+		margin: 0 3px 0 0;
+		line-height: 50rpx;
+		border-radius: 3px;
+		color: rgb(253, 253, 252);
+	}
+
+	.bottom-button-box2 {
+		width: 160rpx;
+		height: 60rpx;
+		margin: 0 auto;
+		border-radius: 35px;
+		background: #1e1e1e;
+		padding: 0px 10px;
+		color: white
+	}
+
+	.bottom-button-icon {
+		width: 60rpx;
+		height: 60rpx;
+		font-size: 45rpx;
+		text-align: center;
+		line-height: 60rpx;
+		float: left
+	}
+
+	.bottom-button-title {
+		width: 100rpx;
+		height: 60rpx;
+		float: left;
+		text-align: center;
+		line-height: 58rpx;
+		font-size: 34rpx;
+
+	}
+
