@@ -2,8 +2,6 @@
 	<view>
 		<view v-for="(trip,index) in datalist">
 			<view class='image-quantity background-color-60 font-color-200'>{{trip.downloads}}</view>
-			
-			
 			<view class="history_item background-color-40">
 				<view class="load-image-date" :style="{top:trip.imageHeight*132+'rpx'}">
 					<view class="load-image-date-animation">
@@ -18,7 +16,7 @@
 						</view>
 					</view>
 				</view>
-				<image class="item-img" :style="{height:trip.imageHeight*365+'rpx'}" :src="'https://www.cedar8.cn/stuphoto/'+trip.randomId"
+				<image class="item-img" @click="popupsIncident($event,index,trip.idExpression)" :style="{height:trip.imageHeight*365+'rpx'}" :src="'https://www.cedar8.cn/stuphoto/'+trip.randomId"
 				 mode="widthFix" item></image>
 				<view class="item-title-box">
 					<view url="url" class="item-title font-color-200">{{trip.title}}</view>
@@ -99,6 +97,11 @@
 			childMethod(e, index, path, idExpression) {
 				console.log("asdsadsadsa")
 				this.$parent.clickDownloadImage(e, index, path, idExpression);
+			}
+			,
+			popupsIncident(e, index, idExpression){
+				console.log("asdsadsadsa")
+				this.$parent.popupsIncidentMain(e, index, idExpression);
 			}
 
 		}

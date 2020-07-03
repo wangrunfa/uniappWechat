@@ -1,9 +1,7 @@
 <template>
 	<view class="pagebackgroundAll">
 		<view class="topberbox">
-			<view class="toptab" :style="{ height : iStatusBarHeight + 'px'}">
-				<view :style="{width: progress}"></view>
-			</view>
+			<view class="toptab" :style="{ height : iStatusBarHeight + 'px'}"></view>
 			 <view  :style="{ height : iStatusBarHeight + 'px'}"> </view>
 			 
 			<view class="navigationBar background-color-30 font-color-200">
@@ -81,11 +79,16 @@
 			</view>
 		
 		</view>
+		
+		<uni-popup class="popup-z-index" ref="popup" type="bottom">
+			<div class="popups-style-box"></div>
+		</uni-popup>
 	</view>
 </template>
 
 <script>
 	import history from "../../conponents/history.vue";
+	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	var startNumbers = 0;
 	var stopNumbers = 20;
 	var switchs = true;
@@ -118,6 +121,7 @@
 
 			}
 		},
+		
 		//加载事件
 		onLoad() {
 			this.iStatusBarHeight = uni.getSystemInfoSync().statusBarHeight
@@ -140,9 +144,18 @@
 		},
 		methods: {
 			topSkip:function(){
-				uni.navigateBack({
-					delta:1
-				})
+				
+				var innlength=getCurrentPages().length;
+				console.log(innlength)
+				if(innlength>1){
+					uni.navigateBack({
+						delta:1
+					})
+				}else{
+					uni.redirectTo({
+						url:"../index/index"
+					})
+				}
 			},
 			searchSikp:function(){
 				uni.navigateTo({
@@ -156,6 +169,27 @@
 
 			labelSearchingBindtap: function(e) {
 				console.log(e.currentTarget.dataset.labelsearching)
+			},
+			popupsIncidentMain:function(e, currentIndex, idExpression){
+				console.log(e)
+				console.log(currentIndex)
+				console.log(idExpression)
+				var tripsLeftLength= this.tripsLeft.length
+					var tripsReightLength= this.tripsReight.length
+				var arrayMaxLength = (tripsLeftLength>tripsReightLength)?tripsLeftLength:tripsReightLength
+							console.log(arrayMaxLength)
+				// for (var i = 0; i < array.length; i++) {
+				// 	if (e.detail.x < windowWightHalf && currentIndex == i) {
+				// 		// this.tripsLeft[currentIndex];
+				// 		break;
+				// 	}
+				// 	if (e.detail.x > windowWightHalf && currentIndex == i) {
+				// 		// this.tripsReight[currentIndex]
+				//           break;
+				// 	}
+				
+				// }
+				 this.$refs.popup.open()
 			},
 			clickDownloadImage: function(e, currentIndex, path, idExpression) {
 				console.log(e)
@@ -206,7 +240,7 @@
 					} else {
 
 						uni.request({
-							url: 'https://www.cedar8.cn:8443/EP/downloadsPlusOne',
+							url: this.websiteUrl+'/EP/downloadsPlusOne',
 							method: 'GET',
 							headers: {
 								'Content-Type': 'application/json'
@@ -240,7 +274,7 @@
 			findList: function() {
 				var that = this;
 				uni.request({
-					url: 'https://www.cedar8.cn:8443/EP/findList',
+					url:  this.websiteUrl+'/EP/findList',
 
 					headers: {
 						'Content-Type': 'application/json'
@@ -294,7 +328,8 @@
 
 		},
 		components: {
-			"m-history": history
+			"m-history": history,
+			 uniPopup,
 		}
 	}
 </script>
@@ -305,9 +340,20 @@
 
 @import "../../conponents/bottom-nav.css";
 	.topberbox {
-		z-index: 1002;
+		z-index: 300;
 	
 		position: fixed;
+	}
+	.popup-z-index{
+		z-index: 200;
+	}
+	.popups-style-box{
+		height: 800rpx;
+		width: 710rpx;
+		margin: 0 20rpx;
+		border-top-left-radius:30rpx ;
+		border-top-right-radius:30rpx ;
+		background: rgb(50,50,50);
 	}
 .download-progress-box{
 	height: 4px;width: 750rpx
@@ -376,7 +422,7 @@
 		clear: both;
 		overflow: hidden;
 		width: 100%;
-		z-index: 202;
+		z-index: 100;
 	}
 	.bottom-to-load{
 		width: 750rpx;

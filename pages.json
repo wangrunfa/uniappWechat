@@ -9,13 +9,26 @@
 				"enablePullDownRefresh":true
 			}
 		},{
+		    "path" : "pages/pet/cat/pet-cat-list",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/pet/cat/pet-cat-info",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/pet/dog/pet-dog-list",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/pet/dog/pet-dog-info",
+		    "style" : {}
+		},{
 		    "path" : "pages/search/search",
 		    "style" : {
 				"enablePullDownRefresh":true
 			}
-		} ,
-		
-		
+		},
 		{
 		    "path" : "pages/particulars/particulars",
 		    "style" : {}
@@ -24,25 +37,8 @@
 	"globalStyle": {
 		"navigationStyle": "custom",
 		"transparentTitle": "auto",
-		"navigationBarTextStyle":"white",
-		"backgroundColor":"#000000"
+		"navigationBarTextStyle":"black",
+		"backgroundColor":"#000"
 		
-	},
-	"tabBar": {
-	    "color": "#fff",
-	    "selectedColor": "#FFC125",
-	    "backgroundColor": "#1E1E1E",
-	    "list": [
-	      {
-	        "pagePath": "pages/index/index",
-	        "iconPath": "static/icon/indexBlack.png",
-	        "selectedIconPath": "static/icon/index.png"
-	      },
-	      {
-	        "pagePath": "pages/particulars/particulars",
-	        "iconPath": "static/icon/showBlack.png",
-	        "selectedIconPath": "static/icon/show.png"
-	      }
-	    ]
-	  }
+	}
 }

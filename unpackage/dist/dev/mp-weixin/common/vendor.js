@@ -8434,7 +8434,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/phizpackage/phizpackage": { "enablePullDownRefresh": true, "usingComponents": { "m-history": "/conponents/history" } }, "pages/search/search": { "enablePullDownRefresh": true, "usingComponents": { "m-history": "/conponents/history" } }, "pages/index/index": { "usingComponents": {} }, "pages/particulars/particulars": { "usingComponents": { "m-history": "/conponents/history" } } }, "globalStyle": { "navigationStyle": "custom", "transparentTitle": "auto", "navigationBarTextStyle": "white", "backgroundColor": "#000000" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": {}, "pages/phizpackage/phizpackage": { "enablePullDownRefresh": true }, "pages/pet/cat/pet-cat-list": {}, "pages/pet/cat/pet-cat-info": {}, "pages/pet/dog/pet-dog-list": {}, "pages/pet/dog/pet-dog-info": {}, "pages/search/search": { "enablePullDownRefresh": true }, "pages/particulars/particulars": {} }, "globalStyle": { "navigationStyle": "custom", "transparentTitle": "auto", "navigationBarTextStyle": "black", "backgroundColor": "#000" } };exports.default = _default;
 
 /***/ }),
 /* 8 */

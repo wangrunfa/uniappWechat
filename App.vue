@@ -1,6 +1,6 @@
 <script>
 	export default {
-		
+	
 		onLaunch: function() {
 			console.log('App Launch')
 		},
@@ -16,14 +16,13 @@
 <style>
 @font-face {
   font-family: 'iconfont';  /* project id 1598223 */
-  src: url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.eot');
-  src: url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1598223_kzo4g4qwirg.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1598223_7tkmcazr233.eot');
+  src: url('//at.alicdn.com/t/font_1598223_7tkmcazr233.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1598223_7tkmcazr233.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1598223_7tkmcazr233.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1598223_7tkmcazr233.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1598223_7tkmcazr233.svg#iconfont') format('svg');
 }
-	
 	.ttf-icon {
 	    font-family: iconfont;
 	}
@@ -34,11 +33,11 @@
 		 width: 750rpx;
 		 position: fixed;
 		 top: 0;
-		 background: #1E1E1E;
+		 background: #ffffff;
 		 z-index: 1200;
 	 }
 	 page{
-		 background: rgb(50,50,50);
+		 background: rgb(245,245,245);
 	 }
 	 
 	 .font-color-255{
@@ -50,16 +49,16 @@
 	 }
 	 
 	 .font-color-200{
-	 		  color: rgb(220,220,220);
+	 		  color: rgb(0,0,0);
 	 }
 	 .background-color-60{
-		 background: rgb(60,60,60);
+		 background: rgb(240,240,240);
 	 }
 	 .background-color-40{
-	 		 background: rgb(40,40,40);
+	 		 background: rgb(255,255,255);
 	 }
 	 .background-color-30{
-	 		 background: rgb(30,30,30);
+	 		 background: rgb(255,255,255);
 	 }
 	 .background-color-1e1e1e{
 	 		 background: #1E1E1E;

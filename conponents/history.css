@@ -39,7 +39,7 @@
 	.item-img {
 		width: 100%;
 		border-radius: 10px 10px 0 0;
-		z-index: 100;
+		z-index: 50;
 		position: relative;
 
 	}
@@ -71,7 +71,7 @@
 	}
 
 	.image-quantity {
-		z-index:300;
+		z-index:60;
 		width: auto;
 		padding: 0 10px;
 		height: 22px;
@@ -148,7 +148,7 @@ text-align: center;line-height: 80rpx;font-size: 60rpx;
 		font-size: 30rpx;
 		float: left;
 		
-        z-index: 300;
+        z-index: 70;
 		margin: 0 3px 0 0;
 		line-height: 50rpx;
 		border-radius: 3px;

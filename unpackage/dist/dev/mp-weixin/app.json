@@ -2,6 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/phizpackage/phizpackage",
+    "pages/pet/cat/pet-cat-list",
+    "pages/pet/cat/pet-cat-info",
+    "pages/pet/dog/pet-dog-list",
+    "pages/pet/dog/pet-dog-info",
     "pages/search/search",
     "pages/particulars/particulars"
   ],
@@ -9,25 +13,9 @@
   "window": {
     "navigationStyle": "custom",
     "transparentTitle": "auto",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#000000"
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#000"
   },
-  "tabBar": {
-    "color": "#fff",
-    "selectedColor": "#FFC125",
-    "backgroundColor": "#1E1E1E",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "static/icon/indexBlack.png",
-        "selectedIconPath": "static/icon/index.png"
-      },
-      {
-        "pagePath": "pages/particulars/particulars",
-        "iconPath": "static/icon/showBlack.png",
-        "selectedIconPath": "static/icon/show.png"
-      }
-    ]
-  },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap89.json"
 }

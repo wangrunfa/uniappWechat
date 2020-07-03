@@ -176,7 +176,7 @@
 					} else {
 
 						uni.request({
-							url: 'https://www.cedar8.cn:8443/EP/downloadsPlusOne',
+							url:  this.websiteUrl+'/EP/downloadsPlusOne',
 							method: 'GET',
 							headers: {
 								'Content-Type': 'application/json'
@@ -209,7 +209,7 @@
 			findList: function() {
 				var that = this;
 				uni.request({
-					url: 'https://www.cedar8.cn:8443/EP/findList',
+					url:  this.websiteUrl+'/EP/findList',
 
 					headers: {
 						'Content-Type': 'application/json'
